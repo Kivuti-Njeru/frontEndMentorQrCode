@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+
+    /* colors */
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Lightgray: hsl(212, 45%, 89%);
+    --clr-Grayishblue: hsl(220, 15%, 55%);
+    --clr-Darkblue: hsl(218, 44%, 22%);
+
+    /* font */
+    --ffOutfit: "Outfit", sans-serif;
+    --p-fs: 15px;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--clr-Lightgray);
+}
+
+.card{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 18rem;
+    gap: 1.2rem;
+    padding: 1rem;
+    margin: auto;
+    border-radius: .8em;
+    background-color: var(--clr-White);
+    font-family: var(--ffOutfit);
+    box-shadow:  0 0 5px 3px #5551;
+    & .img{
+        margin: auto;
+        width: 16rem;
+        height: 16rem;
+        overflow: hidden;
+        border-radius: .6em;
+    }
+    & .title{
+        font-size: 1.3rem;
+    }
+    & .text{
+        color: var(--clr-Grayishblue);
+    }
+}
+
+.footer {
+    position: absolute;
+    padding: .3rem;
+    bottom: 0;
+    font-size: 11px;
+    background-color: var(--clr-White);
+    width: 100%;
+        & p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 500;
+            font-family: var(--ffOutfit);
+        }
+    }
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+    .card {
+        width: 22rem;
+            & .img {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            & .title {
+                font-size: 1.5em;
+                width: 18rem;
+            }
+            & .text{
+                font-size: 1.05em;
+                width: 18rem;
+            }
+        }
+    
+        .footer {    
+            & p {
+                font-size: 1.1em;
+            }
+        }
+}
+
+@media (min-width: 1440px) {
+    .card {
+            width: 24rem;
+    
+            & .img {
+                width: 22rem;
+                height: 22rem;
+            }
+    
+            & .title {
+                font-size: 1.55em;
+                width: 18rem;
+            }
+    
+            & .text {
+                font-size: 1.12em;
+                width: 18rem;
+            }
+        }
+    
+        .footer {
+            & p {
+                font-size: 1.5em;
+            }
+        }
+}
+
+
+@media (min-width: 375px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px){
+    .container{
+        width: 100%;
+    }
+}
