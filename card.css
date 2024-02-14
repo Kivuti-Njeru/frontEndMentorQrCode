@@ -52,8 +52,6 @@ body{
     box-shadow:  0 0 5px 3px #5551;
     & .img{
         margin: auto;
-        width: 15.8rem;
-        height: 15.8rem;
         overflow: hidden;
         border-radius: .6em;
     }
@@ -84,63 +82,4 @@ footer {
 
 footer a {
     color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 375px) {
-    .card {
-        & .img {
-            width: 18rem;
-            height: 18rem;
-        }
-
-        & .title {
-            font-size: 1.5em;
-            width: 18rem;
-        }
-        & .text{
-            font-size: 1.05em;
-            width: 18rem;
-        }
-    }
-    
-        .footer {    
-            & p {
-                font-size: 1.1em;
-            }
-        }
-}
-
-@media (min-width: 1440px) {
-    .card {    
-        & .img {
-            width: 18rem;
-            height: 18rem;
-        }
-
-        & .title {
-            font-size: 1.55em;        
-        }
-
-        & .text {
-            font-size: 1.12em;        
-        }
-    }    
-.footer {
-        & p {
-            font-size: 1.5em;
-        }
-    }
-}
-
-
-@media (min-width: 375px){
-    .container{
-        width: 100%;
-    }
-}
-
-@media (min-width: 1440px){
-    .container{
-        width: 100%;
-    }
 }
